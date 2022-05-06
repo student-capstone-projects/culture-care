@@ -17,11 +17,11 @@ for them. Support services includes:
 * Interpreting / translation
 * Language other than English learning
 
-There are three type of users of the app, they are:
+There are three type of users of the app, they are the:
 
-* the service providers
-* the clients and
-* the Culture Care WA
+* Service providers
+* Clients and
+* Culture Care WA
 
 
 ## Common Functionality
@@ -49,9 +49,6 @@ the app.
 * Multiple service list – The customer can search through the list of services
   available.
 
-* Cost estimation – The cost of the service can be calculated prior to the
-  service booking.
-
 ### Service Provider
 
 Service provides who need to connect with the customers have separate functions
@@ -63,13 +60,10 @@ the features tailored to match the needs of the professionals are,
   themselves on the platform. After verification by Culture Care WA they
   will be able to add, change or remove their details.
 
-* Payout method – The professionals are able to receive the payments for their
-  service online payment integrations.
-
 * Service Requests – This feature allows the handymen to accept or reject the
-  service requests from the customers. If they cancel the request, they need to
+  service requests from the customers. *If they cancel the request, they need to
   mention the reason for cancellation by either using the list of options given
-  or they can type manually.
+  or they can type manually*
 
 ### Admin panel
 
@@ -98,9 +92,39 @@ The Admin panel contains some unique set of features like,
 * Some other features that can also be included in the admin panel are earning
   reports management, managing service categories, analytics, etc.
 
+### Other Potential Features
+
+* Cost estimation – The cost of the service can be calculated prior to the
+  service booking.
+
+* In-App payment.  Clients can pay in-app for the service.  Providers can select
+   preferred payment method.
+
+* Earning reports – Providers can view the earning reports directly from the
+  application. They are able to filter the results by weekly, monthly, or
+  yearly earning reports.  Similar interface could be provided to admin with
+  additional filters of service type.
+
+* Messaging or live chat.  Some means for client and provider to discuss any
+  issues in relation to the service.
+
+* Feedback/rating systems.  Provide an ability for both Clients and Provider to
+  feedback and establish a reputation.
+
+* Calendar Integration.  Provide the ability to add booking to the clients and
+  provider personal calendar.
+
+* Visualisation and Reports.  For the admin user provide various views of
+  bookings.  This could be booking location marked on a map, or number of
+  booking plotted over time, or calendar view of all future books.  Similar
+  ideas for visualisations of number of providers, types of services, cultural
+  filters etc.
+
 ## Implementation Overview
 
-This a Progressive Web Application being developed on Google's
-[Firebase](https://firebase.google.com/) platform.  Firebase is
-a platform for creating mobile and web applications. This application uses authentication, database and hosting features of the platform. All other
-functionality has been developed in HTML, CSS and Javascript.
+Initially the Client interface will be developed first using a pre-populated
+datastore.  This will be a Progressive Web Application (PWA) developed on
+Google's platform for creating mobile and web applications,
+[Firebase](https://firebase.google.com/) platform.  Authentication, database
+and hosting features will be provisioned on Firebase. All other functionality
+has been developed in HTML, CSS and Javascript.
