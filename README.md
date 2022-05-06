@@ -1,2 +1,3 @@
-# culture-care
+# Culture Care
+
 Culturally aware services app
