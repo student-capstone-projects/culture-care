@@ -26,10 +26,10 @@ function toggleSignIn() {
         alert(errorMessage);
       }
       console.log(error);
-      document.getElementById('quickstart-sign-in').disabled = false;
+      document.getElementById('sign-in').disabled = false;
     });
   }
-  document.getElementById('quickstart-sign-in').disabled = true;
+  document.getElementById('sign-in').disabled = true;
 }
 
 /**
@@ -94,15 +94,13 @@ function sendPasswordReset() {
  *    out, and that is where we update the UI.
  */
 function initApp() {
-  // Listening for auth state changes.
   firebase.auth().onAuthStateChanged(function(user) {
-    document.getElementById('quickstart-verify-email').disabled = true;
+    document.getElementById('verify-email').disabled = true;
     if (user) {
       if (!user.emailVerified){
         sendEmailVerification();
         firebase.auth().signOut();
       }
-      // User is signed in.
       let displayName = user.displayName;
       let email = user.email;
       let emailVerified = user.emailVerified;
@@ -110,33 +108,24 @@ function initApp() {
       let isAnonymous = user.isAnonymous;
       let uid = user.uid;
       let providerData = user.providerData;
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-      document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-      document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+      //document.getElementById('sign-in-status').textContent = 'Signed in';
+      document.getElementById('sign-in').textContent = 'Sign out';
+      //document.getElementById('account-details').textContent = JSON.stringify(user, null, '  ');
       if (!emailVerified) {
-        document.getElementById('quickstart-verify-email').disabled = false;
+        document.getElementById('verify-email').disabled = false;
       }
     } else {
-      // User is signed out.
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-      document.getElementById('quickstart-sign-in').textContent = 'Sign in';
-      document.getElementById('quickstart-account-details').textContent = 'null';
+      // User is signed out
+      //document.getElementById('sign-in-status').textContent = 'Signed out';
+      document.getElementById('sign-in').textContent = 'Sign in';
+      //document.getElementById('account-details').textContent = 'null';
+      document.getElementById('sign-in').disabled = false;
     }
-    document.getElementById('quickstart-sign-in').disabled = false;
   });
-
-  document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
-  document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
-  document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
-  document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+  document.getElementById('sign-in').addEventListener('click', toggleSignIn, false);
+  document.getElementById('sign-up').addEventListener('click', handleSignUp, false);
+  document.getElementById('verify-email').addEventListener('click', sendEmailVerification, false);
+  document.getElementById('password-reset').addEventListener('click', sendPasswordReset, false);
 }
 
-window.onload = () => {
-  "use strict";
-
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./serviceworker.js");
-  }
-  initApp();
-};
-
+initApp();

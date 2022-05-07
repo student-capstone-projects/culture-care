@@ -83,15 +83,34 @@
 
         <main>
             <section class="container section section__height">
-                <h1>Contact</h1>
-
-                <form>
-                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                    <input type="submit" value="SUBMIT"/>
+                <img src="images/logo.png" />
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                    <input type="text" name="reply_to" placeholder="Your Email" class="feedback-input" />
+                    <input type="text" name="subject" class="feedback-input" placeholder="Subject" />
+                    <textarea name="text" placeholder="Message" class="feedback-input"></textarea>
+                    <input type="hidden" name="access_token" value="1zvh3p7k8gs9w9decqmaw9rm" />
+                    <input type="hidden" name="success_url" value="success.html?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value="404.html?message=Email+could+not+be+sent.&isError=1" />
+                    <!--
+                    <input type="text" name="extra_phone_number" placeholder="Phone Number" />
+                    -->
+                    <input id="submit_form" type="submit" value="Send" />
+                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                    <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
                 </form>
 
+                <script>
+                    var submitButton = document.getElementById("submit_form");
+                    var form = document.getElementById("email_form");
+                    form.addEventListener("submit", function (e) {
+                        setTimeout(function() {
+                            submitButton.value = "Sending...";
+                            submitButton.disabled = true;
+                        }, 1);
+                    });
+                </script>
+
+            </form>
             </section>
         </main>
 
