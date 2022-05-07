@@ -40,11 +40,13 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  /* font-family: var(--body-font);
+  font-size: var(--normal-font-size);*/
   background-color: var(--body-color);
   color: var(--text-color);
   background-image: url("../images/Green-Background-Phone-Wallpaper-06.jpg");
+  font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
 
 ul {
