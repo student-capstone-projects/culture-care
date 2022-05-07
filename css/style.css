@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *,
 *:before,
 *:after{
@@ -54,6 +55,8 @@ button{
   bottom: -80px;
 }
 
+=======
+>>>>>>> a29589d7a3cb2a3b24050e593d4c24a25e67a447
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 :root {
@@ -96,10 +99,19 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
+<<<<<<< HEAD
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   /* background-color: var(--body-color);*/
+=======
+  /* font-family: var(--body-font);
+  font-size: var(--normal-font-size);*/
+  background-color: var(--body-color);
+>>>>>>> a29589d7a3cb2a3b24050e593d4c24a25e67a447
   color: var(--text-color);
+  background-image: url("../images/Green-Background-Phone-Wallpaper-06.jpg");
+  font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
 
 ul {
@@ -117,6 +129,7 @@ img {
 
 .section {
   padding: 4.5rem 0 2rem;
+  text-align: center;
 }
 
 .section__title {
@@ -265,7 +278,6 @@ img {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
