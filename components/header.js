@@ -43,13 +43,6 @@ class Header extends HTMLElement {
                         </a>
                     </li>
 
-                    <!-- This is a comment -->
-                    <li class="nav__item">
-                        <a href="help.html" class="nav__link active-link">
-                            <i class='bx bx-home-alt nav__icon'></i>
-                            <span class="nav__name">Help</span>
-                        </a>
-                    </li>
 
                   </ul>
             </div>
