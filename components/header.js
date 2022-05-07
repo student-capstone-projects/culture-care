@@ -13,6 +13,14 @@ class Header extends HTMLElement {
 
 
                     <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
                         <a href="login.html" class="nav__link">
                             <i class='bx bx-user nav__icon'></i>
                             <span class="nav__name">Login</span>
@@ -35,6 +43,13 @@ class Header extends HTMLElement {
                         </a>
                     </li>
 
+                    <!-- This is a comment -->
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Help</span>
+                        </a>
+                    </li>
 
                   </ul>
             </div>
