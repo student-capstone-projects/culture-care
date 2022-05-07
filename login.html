@@ -16,7 +16,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
         <script defer type="text/javascript" src="components/header.js" ></script>
+        <script defer type="text/javascript" src="components/login.js" ></script>
         <script defer type="text/javascript" src="js/main.js"></script>
 
         <link rel="apple-touch-startup-image" href="./images/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -74,6 +76,11 @@
         <link rel="icon" type="image/png" sizes="196x196" href="./images/favicon-196.png">
         <link rel="apple-touch-icon" href="./images/apple-icon-180.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -81,13 +88,28 @@
         <header-component></header-component>
 
         <main>
-            <section class="container section section__height">
-                <h1>Login</h1>
 
-                <p>We are here to bring positive social, economic and psychological impact to
-                individuals and families who have English as their second language,
-                particularly those from non-English speaking backgrounds.</p>
-            </section>
+            <div class="background">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+
+            <form>
+                <h3>Login / Sign Up</h3>
+
+                <label for="username">Email</label>
+                <input type="text" placeholder="example@example.com" id="username">
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <button>Log In</button>
+                <button>Register</button>
+                <div class="social">
+                  <div class="go"><i class="fab fa-google"></i>  Google</div>
+                  <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+                </div>
+            </form>
+
         </main>
 
     </body>
