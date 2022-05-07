@@ -34,6 +34,9 @@ There are three type of users of the app, they are the:
   entering there email, but other possibilities  include mobile phone number
   OTP, Google, or Facebook account or some combination providing two factor authentication.
 
+* Contact. If logged in a contact form is displayed, otherwise the address
+  and phone contact for Culture Care WA is provided.
+
 ## Role Based Functionality
 
 ### Clients
@@ -94,11 +97,15 @@ The Admin panel contains some unique set of features like,
 
 ### Other Potential Features
 
-* Cost estimation – The cost of the service can be calculated prior to the
+This section serves as a placeholder of other ideas and features. They may not
+be appropriate due to culture, number of users, number of providers, types of
+services, booking volume or other reasons.
+
+* Cost estimation. The cost of the service can be calculated prior to the
   service booking.
 
 * In-App payment.  Clients can pay in-app for the service.  Providers can select
-   preferred payment method.
+  preferred payment method.
 
 * Earning reports – Providers can view the earning reports directly from the
   application. They are able to filter the results by weekly, monthly, or
@@ -110,6 +117,9 @@ The Admin panel contains some unique set of features like,
 
 * Feedback/rating systems.  Provide an ability for both Clients and Provider to
   feedback and establish a reputation.
+
+* Bidding System.  Clients could post their requirements and providers could bid
+  on the job.
 
 * Calendar Integration.  Provide the ability to add booking to the clients and
   provider personal calendar.
