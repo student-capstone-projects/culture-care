@@ -1,3 +1,8 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'
+// import { analytics } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js'
+import { auth } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js'
+import { firestore } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js'
+
 const firebaseConfig = {
   apiKey: "AIzaSyDT0Sd55G-IaTA3N--_VQ4n_uMaYWxd4S0",
   authDomain: "culture-care-pwa.firebaseapp.com",
