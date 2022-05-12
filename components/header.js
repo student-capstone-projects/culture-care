@@ -13,19 +13,26 @@ class Header extends HTMLElement {
 
 
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">
+                        <a href="index.html" class="nav__link">
                             <i class='bx bx-home-alt nav__icon'></i>
                             <span class="nav__name">About</span>
                         </a>
                     </li>
 
 
-                    <li class="nav__item">
-                        <a href="login.html" class="nav__link">
+                    <li class="nav__item" style="display:block;"  id="nav-login">
+                        <a  href="login.html" class="nav__link">
                             <i class='bx bx-user nav__icon'></i>
                             <span class="nav__name">Login</span>
                         </a>
                     </li>
+                    <li class="nav__item" style="display:none;"  id="nav-logout">
+                        <a style="display=none" id="nav-logout" href="login.html" class="nav__link">
+                           <i class='bx bx-user nav__icon'></i>
+                           <span class="nav__name">Logout</span>
+                        </a>
+                    </li>
+
 
 
                     <li class="nav__item">

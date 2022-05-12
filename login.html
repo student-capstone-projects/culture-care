@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/login.css">
-        <script defer type="text/javascript" src="components/header.js" ></script>
+        <script type="text/javascript" src="components/header.js" ></script>
         <script defer type="module" src="js/index.js"></script>
+        <script defer type="module" src="js/login.js"></script>
     </head>
 
     <body>
@@ -19,33 +20,18 @@
         <header-component></header-component>
 
         <main>
-
+            <section class="container section section__height" id="login">
             <div class="main">
-                <input type="checkbox" id="chk" aria-hidden="true">
-
-                    <div class="signup">
-                        <form>
-                            <label for="chk" aria-hidden="true">Sign up</label>
-                            <input type="email" name="email" placeholder="Email" required="">
-                            <input type="password" name="password" placeholder="Password" required="">
-                            <button id="sign-up">Sign up</button>
-                            <button disabled id="verify-email">Send Verification</button>
-                        </form>
-                    </div>
-
-                    <div class="login">
-                        <form>
-                            <label for="chk" aria-hidden="true">Login</label>
-                            <input type="email" name="email" placeholder="Email" required="">
-                            <input type="password" name="password" placeholder="Password" required="">
-                            <button id="sign-in">Login</button>
-                            <button id="password-reset">Forgot Password</button>
-                        </form>
-                    </div>
+                <img src="images/logo.png" />
+                <form class="sign-in-up-out">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="Password">
+                    <button id="sign-up">Sign up</button>
+                    <button id="sign-in">Login</button>
+                    <button id="forgot-password">Forgot Password</button>
+                </form>
             </div>
-
-            <button class="logout">logout</button>
-
+        </section>
         </main>
     </body>
 </html>
