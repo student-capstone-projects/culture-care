@@ -1,8 +1,7 @@
 let cacheName = "cc-cache";
-let filesToCache = ["/", "index.html", "about.html", "contact.html",
-                    "explore.html", "profile.html", "components/header.js",
-                    "css/style.css", "css/login.css", "css/contact.css",
-                    "js/index.js"];
+let filesToCache = ["/", "index.html", "login.html", "explore.html",
+                    "contact.html", "components/header.js",
+                    "css/style.css", "js/index.js"];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", (e) => {

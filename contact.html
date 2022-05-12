@@ -9,7 +9,6 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon-196.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/contact.css">
         <script type="text/javascript" src="components/header.js" ></script>
         <script defer type="module" src="js/index.js"></script>
     </head>
@@ -17,9 +16,9 @@
     <body>
 
         <header-component></header-component>
-
         <main>
-            <section class="container section section__height">
+            <section class="container section section__height main">
+            <div class="main">
                 <img src="images/logo.png" />
                 <form action="https://postmail.invotes.com/send" method="post" id="email_form">
                     <input type="text" name="reply_to" placeholder="Your Email" class="feedback-input" />
@@ -28,28 +27,22 @@
                     <input type="hidden" name="access_token" value="1zvh3p7k8gs9w9decqmaw9rm" />
                     <input type="hidden" name="success_url" value="http://127.0.0.1:5500/success.html?message=Email+Successfully+Sent%21&isError=0" />
                     <input type="hidden" name="error_url" value="http://127.0.0.1:5500/404.html?message=Email+could+not+be+sent.&isError=1" />
-                    <!--
-                    <input type="text" name="extra_phone_number" placeholder="Phone Number" />
-                    -->
                     <input id="submit_form" type="submit" value="Send" />
                     <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
                     <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
                 </form>
-
-                <script>
-                    var submitButton = document.getElementById("submit_form");
-                    var form = document.getElementById("email_form");
-                    form.addEventListener("submit", function (e) {
-                        setTimeout(function() {
-                            submitButton.value = "Sending...";
-                            submitButton.disabled = true;
-                        }, 1);
-                    });
-                </script>
-
-            </form>
+                </div>
             </section>
         </main>
-
+        <script>
+            var submitButton = document.getElementById("submit_form");
+            var form = document.getElementById("email_form");
+            form.addEventListener("submit", function (e) {
+                setTimeout(function() {
+                    submitButton.value = "Sending...";
+                    submitButton.disabled = true;
+                }, 1);
+            });
+        </script>
     </body>
 </html>
