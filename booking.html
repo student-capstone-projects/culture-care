@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Culture Care</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="white">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-196.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="components/header.js" ></script>
+        <script defer type="module" src="js/index.js"></script>
+        <script defer type="text/javascript" src="js/booking.js"></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <main>
+            <section class="container section section__height">
+            <div class="main">
+                <h1>Options</h1>
+                <br>
+                <table id="filter-table" border="1">
+                    <thead>
+                      <tr>
+                          <th>Current</th>
+                          <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td id="language">
+                               Language
+                           </td>
+                           <td>
+                            <button onclick="window.location.href='language.html'" id="set_language">Change Language</button>
+                           </td>
+                       </tr>
+                       <tr>
+                            <td id="service">
+                                Service
+                            </td>
+                            <td>
+                                <button onclick="window.location.href='service.html'" id="set_service">Change Service</button>
+                            </td>
+                       </tr>
+                        <tr>
+                            <td id="time">
+                                Time
+                            </td>
+                            <td>
+                                <button onclick="window.location.href='time.html'" id="set_time">Change  Time</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="location">
+                                Location
+                            </td>
+                            <td>
+                                <button onclick="window.location.href='location.html'" id="set_location">Change Location</button>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+                <button id='find-service' onclick="window.location.href='services.html'">Find Service</button>
+            </div>
+            </section>
+        </main>
+    </body>
+</html>

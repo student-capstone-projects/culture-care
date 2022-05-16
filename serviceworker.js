@@ -1,6 +1,7 @@
 let cacheName = "cc-cache";
-let filesToCache = ["/", "index.html", "login.html", "explore.html",
-                    "contact.html", "components/header.js",
+let filesToCache = ["/", "index.html", "login.html", "booking.html",
+                    "contact.html", "time.html", "location.html",
+                    "service.html", "language.html", "components/header.js",
                     "css/style.css", "js/index.js"];
 
 /* Start the service worker and cache all of the app's content */

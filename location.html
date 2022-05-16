@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="components/header.js" ></script>
-        <script defer type="module" src="js/index.js"></script>
+        <script defer type="text/javascript" src="js/index.js"></script>
     </head>
 
     <body>
@@ -18,9 +18,17 @@
         <main>
             <section class="container section section__height">
             <div class="main">
-                <h1>Explore</h1>
-
-                <button>Big Button</button>
+                <h1>Location</h1>
+                    <fieldset>
+                      <legend>Select Distance:</legend>
+                      <input type="radio" id="10km" name="location" value="10km" checked>
+                      <label for="10km">10km</label>
+                      <input type="radio" id="indonesian" name="location" value="30km">
+                      <label for="indonesian">30km</label>
+                      <input type="radio" id="100km" name="location" value="100km">
+                      <label for="100km">100km</label>
+                    </fieldset>
+                <button onclick="set_option('location')">Save</button>
             </div>
             </section>
         </main>

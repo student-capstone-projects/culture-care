@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Culture Care</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="white">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-196.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="components/header.js" ></script>
+        <script defer type="text/javascript" src="js/index.js"></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <main>
+            <section class="container section section__height">
+            <div class="main">
+                <h1>Service</h1>
+                    <fieldset id="service">
+                     <legend>Select Service:</legend>
+                      <input type="radio" value="babysitting" name="service">
+                      <label for="babysitting">Babysitting</label>
+                      <input type="radio" value="nanny" name="service">
+                      <label for="nanny">Nanny</label>
+                      <input type="radio" value="meal-prep" name="service">
+                      <label for="meal-prep">Meal Preparation</label>
+                      <input type="radio" value="pick-up" name="service">
+                      <label for="pick-up">Pick up</label>
+                      <input type="radio" value="drop-off" name="service">
+                      <label for="drop-off">Drop off</label>
+                    </fieldset>
+                    <button onclick="set_option('service')">Save</button>
+            </div>
+            </section>
+        </main>
+    </body>
+</html>

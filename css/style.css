@@ -95,6 +95,52 @@ button{
 	cursor: pointer;
 }
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.cardRow {
+  display: flex;
+  width: 70%;
+  height: 210px;
+  overflow-x: auto;
+  background: #222;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card {
+  background-color: #ecf0f1;
+  width: 200px;
+  /*Not working???*/
+  height: 200px;
+  margin-right: 15px;
+  padding: 5px;
+  color: #34495e
+}
+
+/*
+#filter-table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+button:disabled {
+  color: grey;
+}
+
 button:hover{
 	background: #6d44b8;
 }

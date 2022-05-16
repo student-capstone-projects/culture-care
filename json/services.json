@@ -1,0 +1,20 @@
+{
+  "babysitting":{
+    "name": "Baby Sitting"
+  },
+  "nanny":{
+    "name": "Nanny"
+  },
+  "laundry":{
+    "name": "Laundry"
+  },
+  "mealprep":{
+    "name": "Meal Preparation"
+  },
+  "cleaning":{
+    "name": "Cleaning"
+  },
+  "dropoff":{
+    "name": "Pick-up Drop-off"
+  }
+}

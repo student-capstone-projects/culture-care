@@ -17,9 +17,19 @@
         <header-component></header-component>
         <main>
             <section class="container section section__height">
-                <img src="images/logo.png" />
-                <h1>Template</h1>
-
+            <div class="main">
+                <h1>Language</h1>
+                    <fieldset>
+                      <legend>Select Language:</legend>
+                      <input type="radio" id="korean" name="language" value="korean"checked>
+                      <label for="koren">Korean</label>
+                      <input type="radio" id="indonesian" name="language" value="indonesian">
+                      <label for="indonesian">Indonesian</label>
+                      <input type="radio" id="cantonese" name="language" value="cantonese">
+                      <label for="cantonese">Cantonese</label>
+                    </fieldset>
+                <button onclick="set_option('language')">Save</button>
+            </div>
             </section>
         </main>
     </body>

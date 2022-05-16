@@ -135,6 +135,9 @@ services, booking volume or other reasons.
 Initially the Client interface will be developed first using a pre-populated
 datastore.  This will be a Progressive Web Application (PWA) developed on
 Google's platform for creating mobile and web applications,
-[Firebase](https://firebase.google.com/) platform.  Authentication, database
-and hosting features will be provisioned on Firebase. All other functionality
-has been developed in HTML, CSS and Javascript.
+[Firebase](https://firebase.google.com/). Authentication and database
+services will be provisioned on this platform. This choice removes the
+technicalities of cloud server configuration and eliminates the need to write
+backend code.   Explicit built-in security rules protect the backend.
+Firebase hosting may be considered in the future, but the prototype is being
+hosted on GitHub pages.

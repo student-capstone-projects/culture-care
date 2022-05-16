@@ -36,9 +36,9 @@ class Header extends HTMLElement {
 
 
                     <li class="nav__item">
-                        <a href="explore.html" class="nav__link">
+                        <a href="booking.html" class="nav__link">
                             <i class='bx bx-book-alt nav__icon'></i>
-                            <span class="nav__name">Explore</span>
+                            <span class="nav__name">Bookings</span>
                         </a>
                     </li>
 

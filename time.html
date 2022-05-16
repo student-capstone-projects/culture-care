@@ -17,9 +17,21 @@
         <header-component></header-component>
         <main>
             <section class="container section section__height">
-                <img src="images/logo.png" />
-                <h1>Template</h1>
-
+            <div class="main">
+                <h1>Time</h1>
+                    <fieldset id="time">
+                     <legend>Select Time:</legend>
+                      <input type="radio" value="7am-9am" name="time">
+                      <label for="7am-9am">7am-9am</label>
+                      <input type="radio" value="9am-2pm" name="time">
+                      <label for="9am-2pm">9am-2pm</label>
+                      <input type="radio" value="2pm-6pm" name="time">
+                      <label for="meal-prep">2pm-6pm</label>
+                      <input type="radio" value="night-shift" name="time">
+                      <label for="night-shift">Night Shift</label>
+                    </fieldset>
+                <button onclick="set_option('time')">Save</button>
+            </div>
             </section>
         </main>
     </body>

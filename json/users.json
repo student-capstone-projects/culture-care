@@ -1,0 +1,26 @@
+{
+  "ameraz@email.com":{
+    "name": "Alex Meraz",
+    "email": "ameraz@email.com",
+    "dob": "19/04/1980",
+    "suburb": "Cannington",
+    "postcode": "6107",
+    "country": "Korea"
+  },
+  "mrafi@email.com":{
+    "name": "Mohammed Rafi",
+    "email": "mrafi@email.com",
+    "dob": "19/04/1980",
+    "suburb": "Langford",
+    "postcode": "6147",
+    "country": "Malaysia"
+  },
+  "spichai@email.com":{
+    "name": "Sundar Pichai",
+    "email": "spichai@email.com",
+    "dob": "19/04/1980",
+    "suburb": "Canning Vale",
+    "postcode": "6155",
+    "country": "Korea"
+  }
+}
