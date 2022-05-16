@@ -6,26 +6,21 @@
     box-sizing: border-box;
 }
 
+
+.container {
+  max-width:95%;
+  margin:0 auto;
+}
+
 body{
   color: #fff;
-	margin: 0;
-	padding: 0;
-	display: flex;
+  display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
-
-.main{
-	width: 350px;
-	height: 500px;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
-}
-
 
 [type="submit"] {
   height: 100%;
@@ -43,7 +38,7 @@ body{
 textarea {
   height:100%;
   resize:vertical;
-  width: 60%;
+  width: 100%;
 }
 
 .feedback-input {
@@ -65,7 +60,7 @@ textarea {
 }
 
 input{
-	width: 60%;
+	width: 100%;
 	height: 20px;
 	background: #e0dede;
 	justify-content: center;
@@ -78,7 +73,7 @@ input{
 }
 
 button{
-	width: 60%;
+	width: 100%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
@@ -95,47 +90,12 @@ button{
 	cursor: pointer;
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 
-  .card {
-    display: inline-block;
-  }
-}
-
-.cardRow {
-  display: flex;
-  width: 70%;
-  height: 210px;
-  overflow-x: auto;
-  background: #222;
-}
-
-.scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.card {
-  background-color: #ecf0f1;
-  width: 200px;
-  /*Not working???*/
-  height: 200px;
-  margin-right: 15px;
-  padding: 5px;
-  color: #34495e
-}
-
-/*
 #filter-table {
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-*/
 
 button:disabled {
   color: grey;
@@ -144,6 +104,7 @@ button:disabled {
 button:hover{
 	background: #6d44b8;
 }
+
 
 @media screen and (min-width: 968px) {
   :root {
@@ -167,28 +128,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.section {
-  padding: 4.5rem 0 2rem;
-  text-align: center;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.section__height {
-  height: 100vh;
-}
-
-.container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .header {

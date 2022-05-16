@@ -10,25 +10,21 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="components/header.js" ></script>
-        <script defer type="module" src="js/index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script defer type="module" src="js/login.js"></script>
     </head>
 
     <body>
-        <header-component></header-component>
         <main>
-            <section class="container section section__height">
-            <div class="main">
-                <img src="images/logo.png" />
-                <form class="sign-in-up-out">
-                    <input type="email" name="email" placeholder="Email" class="feedback-input" required="">
-                    <input type="password" name="password" placeholder="Password" class="feedback-input">
-                    <button id="sign-up">Sign up</button>
-                    <button id="sign-in">Login</button>
-                    <button id="forgot-password">Forgot Password</button>
-                </form>
-            </div>
-            </section>
-        </main>
+        <header-component></header-component>
+        <img src="images/logo.png" />
+        <form class="sign-in-up-out">
+            <input type="email" name="email" placeholder="Email" class="feedback-input" required="">
+            <input type="password" name="password" placeholder="Password" class="feedback-input">
+            <button id="sign-up">Sign up</button>
+            <button id="sign-in">Login</button>
+            <button id="forgot-password">Forgot Password</button>
+        </form>
+    </main>
     </body>
 </html>
